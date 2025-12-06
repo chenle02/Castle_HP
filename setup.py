@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         # List your project dependencies here, e.g.,
-        # 'pygame',
+        'pygame',
         # 'numpy',
     ],
     entry_points={
