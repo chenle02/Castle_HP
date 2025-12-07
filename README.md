@@ -2,6 +2,59 @@
 
 A Python game.
 
+## Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/game.git
+    cd game
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Install the dependencies:**
+    ```bash
+    pip install -e .
+    ```
+
+## How to Play
+
+-   **Start the game:**
+    ```bash
+    game
+    ```
+-   **Navigate the menu:**
+    -   Press `Enter` to start the game.
+-   **Control the player:**
+    -   Use the arrow keys (`Up`, `Down`, `Left`, `Right`) to move the player.
+-   **Answer questions:**
+    -   When a question appears, press the number key (`1`, `2`, `3`, or `4`) corresponding to your answer.
+-   **Game Over:**
+    -   If your HP drops to 0, the game is over.
+    -   Press `Enter` to restart the game.
+
+## Configuration
+
+You can customize the game by editing the `game/config.py` file. Here are some of the options you can change:
+
+-   **Screen Dimensions:**
+    -   `SCREEN_WIDTH`
+    -   `SCREEN_HEIGHT`
+-   **Player Settings:**
+    -   `PLAYER_HP`
+    -   `PLAYER_SPEED`
+-   **Assets:**
+    -   `PLAYER_IMG`: Path to the player's image.
+    -   `BACKGROUND_IMG`: Path to the background image.
+    -   `BACKGROUND_MUSIC`: Path to the background music file.
+-   **Questions:**
+    -   You can add, remove, or modify questions in the `game/questions.py` file.
+
+
 Game Development Plan
 Game Summary
 
@@ -163,9 +216,9 @@ Content Customization: We will prepare a set of questions in advance, but the sy
 
 Positive Reinforcement: The educational content strategy is all about positive reinforcement. Correct answers earn immediate rewards in the game (as discussed in the Question System). Additionally, we could include a simple scoreboard or progress tracker that the child can see (for example, an on-screen tally of how many questions they’ve gotten right so far, or a “skill level” that increases). This acts as a reinforcement mechanism, showing the child how much they’ve learned and achieved. We avoid negative scoring; even if an answer is wrong, the child gets encouragement to try again rather than losing significant progress.
 
-Review and Learning Outcomes: After finishing each level or the game, we can have a quick review of what was learned. This might be done outside the game (parent and child discuss “Hey, you solved X and Y today, that’s great!”) or possibly in the game by unlocking a “Fun Fact” or a piece of lore that contains educational information. For example, if a science question was about planets, perhaps upon answering, the game shows a little fact about Mars. This way, the child not only practices skills but also gains knowledge.
+Review and Learning Outcomes: After finishing each level or the game, we can have a quick review of what was learned. This might be done outside the game (parent and child discuss “Hey, you solved X and Y today, that’s great!”) or possibly in the game by unlocking a “Fun Fact” or a piece of lore that contains educational information. For example, if a science question was about planets, perhaps upon answering, the game shows a little fact about Mars. This way, a child not only practices skills but also gains knowledge.
 
-In summary, the educational content is carefully woven into the game’s fabric. It’s not just a random quiz — it’s aligned with the gameplay and the child’s learning needs. By making the content interactive, customizable, and rewarding, we ensure that the child remains engaged and benefits academically. The parent-child programming aspect also means the child learns about coding through the process, doubling the educational value: they gain subject matter knowledge from the questions and programming knowledge from building the game. This holistic approach turns a simple game project into a rich learning experience on multiple fronts.ame Development Plan
+In summary, the educational content is woven into the game’s fabric. It’s not just a random quiz — it’s aligned with the gameplay and the child’s learning needs. By making the content interactive, customizable, and rewarding, we ensure that the child remains engaged and benefits academically. The parent-child programming aspect also means the child learns about coding through the process, doubling the educational value: they gain subject matter knowledge from the questions and programming knowledge from building the game. This holistic approach turns a simple game project into a rich learning experience on multiple fronts.ame Development Plan
 Game Summary
 
 The game is a collaborative educational adventure designed for a parent and child to code and play together. It combines fun gameplay with learning, allowing both the parent and child to contribute. In this game, the players embark on a quest where they must overcome challenges and answer questions to progress. The goal is to make programming and learning enjoyable, strengthening the child’s skills and fostering teamwork.
