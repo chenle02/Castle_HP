@@ -19,6 +19,6 @@ PLAYER_SPEED = 5
 PLAYER_HP = 100
 
 # Assets
-PLAYER_IMG = "assets/IMG20251206131413.jpg"
-BACKGROUND_IMG = "assets/IMG20251206155316.jpg"
+PLAYER_IMG = "assets/Car.jpg"
+BACKGROUND_IMG = "assets/unnamed.png"
 BACKGROUND_MUSIC = "assets/sounds/background_music.mp3"

@@ -1,6 +1,6 @@
 # game/player.py
 import pygame
-from game.config import PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_IMG, PLAYER_SPEED, PLAYER_HP, WHITE
+from game.config import PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_IMG, PLAYER_SPEED, PLAYER_HP, RED
 
 class Player:
     def __init__(self, x, y):
@@ -11,7 +11,7 @@ class Player:
         self.rect.y = y
         self.speed = PLAYER_SPEED
         self.hp = PLAYER_HP
-        self.font = pygame.font.Font(None, 36)
+        self.max_hp = PLAYER_HP
 
     def take_damage(self, amount):
         self.hp -= amount
@@ -41,5 +41,6 @@ class Player:
 
     def draw(self, screen):
         screen.blit(self.image, self.rect)
-        hp_text = self.font.render(f"HP: {self.hp}", True, WHITE)
-        screen.blit(hp_text, (10, 10))
+        # Draw hearts for HP
+        for i in range(self.hp // 10):
+            pygame.draw.rect(screen, RED, (10 + i * 35, 10, 30, 30))
